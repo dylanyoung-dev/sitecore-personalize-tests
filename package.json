@@ -1,0 +1,31 @@
+{
+  "name": "sitecore-personalize-js-automated-tests",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dylanyoung-dev/sitecore-personalize-automation-tests.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dylanyoung-dev/sitecore-personalize-automation-tests/issues"
+  },
+  "homepage": "https://github.com/dylanyoung-dev/sitecore-personalize-automation-tests#readme",
+  "dependencies": {
+    "sitecore-cdp-tenant-sdk": "../sdk/"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.3.4",
+    "@types/mocha": "^10.0.0",
+    "chai": "^4.3.7",
+    "mocha": "^10.1.0",
+    "ts-node": "^10.9.1"
+  }
+}
