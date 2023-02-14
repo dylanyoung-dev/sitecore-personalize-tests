@@ -1,6 +1,5 @@
 # Sitecore Personalize Automated Tests Examples
-These tests are written in Mocha, SuperTest and using the Node based SDK for Sitecore CDP/Personalize available on NPM: (Coming Soon)
+
+This repository represents an example template repository of how to write Sitecore Personalize Unit/Automation Tests. If you want to start writing your own tests, select `Use this template` to get up and running quickly with your own tests and use the examples as ideas for your own Unit/Automation tests. All the tests in this repository is written with MochaJS and SuperTest. The Sitecore Personalize APIs are consumed through the use of the SDK here: https://www.npmjs.com/package/sitecore-personalize-tenant-sdk
 
 ## Getting Started
-
-The intention is for these tests to likely run in a CI/CD process, however they can also be run for one off scenarios.  The scenarios provided in this repository are detailed below.  This is a template repository, so you should plan to "Use this template" and use this as a guide to create your own automation testing scenarios.
