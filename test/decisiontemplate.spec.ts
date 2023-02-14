@@ -1,16 +1,21 @@
 import { assert } from 'chai';
-import { Client } from 'sitecore-cdp-tenant-sdk';
+import { Client, RegionOptions, TemplateType } from 'sitecore-personalize-tenant-sdk';
 
 describe('Basic Test', function () {
-let client: Client;
-  before(function (
+  let client: Client;
+  before(async () => {
     client = new Client({
-      clientId: 'https://cdp.dev.local',
-      clientSecret: 'default
-      region: 
-  ) {});
+      clientId: 'psfu6uh05hsr9c34rptlr06dn864cqrx',
+      clientSecret: 'uz9h803ertuvxcb9jh2cu05t87at85nl',
+      region: RegionOptions.EU,
+    });
 
-  it('should return -1 when the value is not present', function () {
-    assert.equal([1, 2, 3].indexOf(4), -1);
+    await client.Authenticate();
+  });
+
+  it('Test Authentication', async () => {
+    let value = await client.Templates.GetAllTemplates(TemplateType.Web);
+
+    assert.isNotEmpty(value);
   });
 });

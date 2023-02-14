@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "build": "tsc",
     "test": "mocha"
@@ -19,7 +20,7 @@
   },
   "homepage": "https://github.com/dylanyoung-dev/sitecore-personalize-automation-tests#readme",
   "dependencies": {
-    "sitecore-cdp-tenant-sdk": "../sdk/"
+    "sitecore-personalize-tenant-sdk": "^0.2.0-beta.0"
   },
   "devDependencies": {
     "@types/chai": "^4.3.4",

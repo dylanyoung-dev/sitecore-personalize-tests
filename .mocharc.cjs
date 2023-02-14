@@ -5,5 +5,5 @@ module.exports = {
   bail: true,
   slow: 1000,
   recursive: true,
-  spec: ['./lib/tests/**/*.spec.js'],
+  spec: ['./lib/**/*.spec.js'],
 };
